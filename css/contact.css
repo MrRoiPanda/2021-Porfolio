@@ -1,0 +1,88 @@
+.contact-title {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+@media (max-width: 50em) {
+  .contact-title {
+    font-size: 10vw;
+  }
+}
+/*contact*/
+.contact {
+  padding: 5em 0;
+  margin: 0 auto;
+  max-width: 50em;
+  vertical-align: middle;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+@supports (display: grid) {
+  @media (min-width: 50em) {
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 1em;
+      grid-template-areas:
+      "name    email"
+      "message message"
+      " .  button";
+    }
+    form .name {
+      grid-area: name;
+    }
+    form .email {
+      grid-area: email;
+    }
+    form .message {
+      grid-area: message;
+
+    }
+    form .message textarea {
+      height: 10em;
+    }
+    form .button {
+      grid-area: button;
+    }
+  }
+}
+label {
+  text-align: left;
+  display: block;
+  margin-top: 1em;
+  color: #606060;
+}
+input, textarea {
+  box-sizing: border-box;
+  display: block;
+  padding: .75em;
+  width: 100%;
+  background: #f6f6f7;
+  border: 1px solid #e8e9eb;
+  font-size: 1.2rem;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 50em) {
+  input, textarea {
+
+  }
+
+}
+.button {
+    display: inline-block;
+    width: auto;
+    margin-top: 1em;
+    margin-left: auto;
+    background: #223843;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: .5em 1.5em;
+}

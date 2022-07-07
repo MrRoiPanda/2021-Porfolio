@@ -1,0 +1,19 @@
+.fade-page-in {
+  /*../img/home_bg.png*/
+  background: no-repeat center url(https://images.pexels.com/photos/376368/pexels-photo-376368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+}
+.welcome {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.welcome-title {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10vw;
+}
